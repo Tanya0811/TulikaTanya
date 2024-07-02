@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personle Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a174ac95ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src = "images/logo.png" class="logo">
+            <ul id = "sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#learnings">LEARNINGS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contacts">RESUME</a></li>
+                <li><a href="#contacts">CONTACT</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class ="header-text"> 
+            <p>Java Developer</p>
+            <h1>Hii, I'm <span>Tulika Tanya</span></h1>
+            <br>
+            <h6>I'm experienced in using Java, Spring Boot for back-end development,<br>and Angular for front-end development. I also have expertise in<br>database management with MySQL and MongoDB.</h6>
+        </div>
+    </div>
+<!--------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myself.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>This is Tulika Tanya from Computer Science Engineering with a strong foundation in Java and Python coding, along with expertise in web development. My passion lies in the dynamic fields of Cloud Computing, DevOps, and Big Data Technology, where I continually seek to expand my knowledge and skills. Currently, I am eager to transition into roles that align  with my interests, such as data analysis, DevOps engineering, or cloud engineering. Besides that I may also consider developer roles in java or python language.</p>
+                        <div class="tabtitles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Java, Python, Javascript</li>
+                                <li><span>Web development</span><br>HTML, CSS, Javascript</li>
+                                <li><span>Frameworks</span><br>Boot Spring, jquery</li>
+                                <li><span>Version Control</span><br>Git, GitHub</li>
+                                <li><span>Data Analytics</span><br>Hadoop, Spark</li>
+                                <li><span>Data Visualization</span><br>Power Bi</li>
+                                <li><span>Designing</span><br>Canva</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2025</span><br>B.tech in Computer Science And Engineering From MIT ADT University<br>Specilization in Big Data And Cloud Engineering</li>
+                                <li><span>2021</span><br>12th Grade from De Nobili School ICSE</li>
+                                <li><span>2019</span><br>10th Grade from Mt. Carmel School ICSE</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>AWS Data Analytics</span><br>Key Skills: Data analytics in AWS AWS cloud</li>
+                                <li><span>Cloud Computing Applications, Part 1: Cloud Systems and Infrastructure</span><br>Key Skills: Cloud architectures, Service Models, Services providers, Dockers & Containers</li>
+                                <li><span>Cloud Computing Applications, Part 2: Big Data and Applications in the Cloud</span><br>Key Skills: Applications of Cloud Computing in Big Data like Hadoop, Spark, MapReduce,<br>HDFs Spark Streaming, Lambda and Kappa Architectures</li>
+                                <li><span>DevOps on AWS</span><br>AWS Cloud Technical Essentials DevOps on AWS: Code, Build, and Test DevOps on<br>AWS: Release and Deploy DevOps on AWS: Operate and Monitor</li>
+                                <li><span>Introduction to Big Data with Spark and Hadoop </span><br>Introduction to big data tools hadoop, spark Apache Hadoop architecture Hive,<br>HDFS, HBase, Spark, and MapReduce.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ <!-----------------------learnings---------------------------> 
+ <div id="learnings">
+    <div class="container">
+        <h1 class="sub-title">My Learnings</h1>
+        <div class="learning-list">
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud Computing</h2>
+                <p>I am currently exploring AWS Cloud Computing, focusing on its core services like EC2, S3, RDS, and Lambda. My learning includes hands-on experience with deploying and managing applications, configuring security settings, and understanding cloud architecture best practices. This journey is enhancing my skills in scalable and reliable cloud solutions.</p>
+            </div>
+
+            <div>   
+                <i class="fa-solid fa-server"></i>
+                <h2>Data engineering</h2>
+                <p>I'm mastering data engineering, focusing on databases, ETL processes, and cloud platforms to manage and analyze large datasets efficiently.</p>
+            </div> 
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Backend frameworks</h2>
+                <p>After having fair knowledge on spring boot, I've been diving into various other backend frameworks like Express.js for Node.js, Django and Flask in Python. Each framework offers unique tools and structures for building robust server-side applications, enhancing my proficiency in backend development across different programming languages. </p>
+            </div>
+        </div>  
+    </div>
+ </div>
+<!--------------------------Projects------------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projetcs</h1>  
+        <div class="project-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class = "layer">
+                    <h3>Portfolio website</h3>
+                    <p>A responsive portfolio website showcasing my skills, projects, and experience using HTML, CSS, and JavaScript.</p>
+                    <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpeg">
+                <div class = "layer">
+                    <h3>College predictor</h3>
+                    <p>The project is a college prediction website that works on HTML, CSS, JavaScript, PHP, MySQL on Apache server using XAMP.</p>
+                    <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class = "layer">
+                    <h3>Amazon flipkart price comparison engine</h3>
+                    <p>Compares product specifications and prices of products on top E-commerce websites</p>
+                    <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class = "btn">See more</a>
+    </div>
+</div>
+<!--------------------------Contacts------------------------------->
+<div id ="contacts" class="contact">
+    <div class="contaier">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> tulikatanya0811@gmail.com </p>
+                <p><i class="fa-solid fa-phone"></i> +91 6200370879 </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/tulika-tanya-79002122a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Tanya0811"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/tulikatanya14/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/resume.final.pdf" download class = "btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder="Your Name" required>
+                    <input type = "email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Made with <i class="fa-solid fa-heart"></i> by Tulika Tanya</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwv8NXHpo23afNmPiGMzMHQVYzOoVkA6yZSG5XQzB6OxKWEKvsv5AWpuqPnC3fZ4uXm0Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            sentTimeout
+            (function(){
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+</body>
+</html>
